@@ -11,12 +11,14 @@
             June, 23rd, 2026
         </p>
     </div>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our Story</a></li>
-        <li><a href="#">Details</a></li>
-        <li><a href="#">RSVP</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Details</a></li>
+            <li><a href="#">RSVP</a></li>
+        </ul>
+    </nav>
 </section>
 </template>
 
@@ -27,13 +29,13 @@ a{
 section {
     display: flex;
     height: 15vh;
-    width: 100vw;
     align-items: center;
     justify-content: space-between;
     background-color: #A69A9A;
     color: #FFFFFF;
 }
 section div {
+    padding: 0 0 0 20px;
     display: flex;
     align-items: center;
     margin: 0 0 0 30px;
@@ -46,12 +48,12 @@ section div h1 a {
     text-decoration: none;
 }
 
-section ul{
+section nav ul{
     display: flex;
     gap: 10px;
-    margin: 0 30px 0 0;
+    padding: 0 10px 0 0;
 }
-section ul li a {
+section nav ul li a {
     font-family: "Inter", sans-serif;
 }
 

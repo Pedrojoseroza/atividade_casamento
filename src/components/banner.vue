@@ -2,9 +2,9 @@
 </script>
 <template>
     <section class="banner">
-    <p>
+    <h2>
       Jenny & Jason
-    </p>
+    </h2>
 
     <div>
       <p>
@@ -21,28 +21,27 @@ St. Augustine New York
 <style scoped>
 
 .banner {
-  width: 100vw;
   max-width: 100vw;
 }
-.banner > p {
+.banner h2  {
   text-align: center;
   font-size: 10rem;
   font-family: 'Aboreto', sans-serif;
+  padding: 20px 0;
 }
 .banner div {
-background-image: url('/back_image.png');
-min-height: 80vh;
-display: flex;
-align-items: center;
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-size: cover; 
-  width: 100vw;
+  background-image: url('/back_image.png');
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover; 
 }
 .banner div p {
   font-size: 2.5rem;
   text-align: center;
-  padding: 0 20rem;
+  padding: 0 20vw;
   color: white;
 }
 
