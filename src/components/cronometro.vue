@@ -1,4 +1,24 @@
-<script></script>
+<script setup>
+import { ref } from 'vue';
+const tempo = ref(1000000);
+const segundos = ref(60);
+const minutos = ref(tempo.value % 60);
+const horas = ref(Math.round(tempo.value / (60 * 60)));
+if (tempo.value > 0) {
+  const cronometroSeg = setInterval(() => {
+    segundos.value--
+    tempo.value--;
+  }, 1000);
+  const cronometroMin = setInterval(()=> {
+    segundos.value = 60;
+    minutos.value--
+  }, 60000)
+  const cronometroHora = setInterval(() => {
+    minutos.value = 60;
+    horas.value--;
+  }, 360000);
+}
+</script>
 <template>
   <section class="cronometro">
     <h2>
@@ -6,7 +26,9 @@
     </h2>
     <div>
       <span>
-        00:00:00
+        {{ horas }}:
+        {{ minutos }}:
+       {{ segundos }}
       </span>
     </div>
   </section>
@@ -30,7 +52,7 @@
   width: 65vw;
   background-color: #D9D9D9;
   text-align: center;
-  font-size: 15rem;
+  font-size: 10rem;
   border-radius: 20px;
 }
 @media screen and (max-width: 900px) {

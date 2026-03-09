@@ -78,8 +78,8 @@ ul li p {
     margin: 10px 0;
   }
    section ul li:hover {
-     height: 60.5vh;
-     width: 40.5vw;    
+     height: 42vh;
+     width: 52vw;
   }
   section ul li p {
     font-size: 1.5rem;
