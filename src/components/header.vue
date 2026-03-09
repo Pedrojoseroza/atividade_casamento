@@ -1,5 +1,5 @@
 <script setup>
-
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 </script>
 <template>
 <section>
@@ -18,6 +18,9 @@
             <li><a href="#">Details</a></li>
             <li><a href="#">RSVP</a></li>
         </ul>
+        <span class="toggle">
+          <font-awesome-icon icon="fa-solid fa-bars" />
+        </span>
     </nav>
 </section>
 </template>
@@ -31,10 +34,13 @@ section {
     height: 15vh;
     align-items: center;
     justify-content: space-between;
-    background-color: #A69A9A;
+    background-color: #a69a9ab6;
     color: #FFFFFF;
+    position:sticky;
+    top: 0;
+    z-index: 2;
 }
-section div {
+section > div {
     padding: 0 0 0 20px;
     display: flex;
     align-items: center;
@@ -47,14 +53,46 @@ section div h1 {
 section div h1 a {
     text-decoration: none;
 }
-
-section nav ul{
+section nav {
+  margin: 0 20px 0 0;
+}
+section nav ul {
     display: flex;
     gap: 10px;
     padding: 0 10px 0 0;
 }
+section nav span {
+  display: none;
+}
 section nav ul li a {
     font-family: "Inter", sans-serif;
+    text-decoration: none;
+}
+section nav ul li a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  section {
+    height: 10vh;
+    justify-content: space-between;
+  }
+  section > div {
+    padding: 0 0 0 0px;
+ }
+ section div h1 {
+  font-size: 2rem;
 }
 
+ section div p {
+  display: none;
+ }
+ section nav ul {
+  display: none;
+ }
+ section nav span{
+  display: block;
+  margin: 0 20px 0 0;
+  font-size: 2rem;
+ }
+}
 </style>

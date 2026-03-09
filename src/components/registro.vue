@@ -17,10 +17,10 @@
 
 .registrar {
   background-image: url('/fundo_do_registro.png');
-  height: 85vh;
+  height: 75vh;
   margin: 0 0 30px 0;
   background-position: contain;
-  
+
 }
 .registrar div {
   color: white;
@@ -34,7 +34,7 @@
 .registrar div p {
   font-size: 1.8rem;
   margin: 20px 0;
-  padding: 0 10vw;
+  padding: 0 20vw;
 }
 .registrar div button {
   border: 0;
@@ -42,11 +42,31 @@
   min-width: 30vw;
   min-height: 10vh;
   border-radius: 40px;
+  margin: 40px 0 0 0;
   font-family: 'Aboreto', sans-serif;
   color: white;
   font-size: 2rem;
 }
 .registrar div button:hover {
     cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .registrar {
+    height: 50vh;
+  }
+  .registrar div h2 {
+    font-size: 3rem;
+  }
+  .registrar div p {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    padding: 0 10vw;
+  }
+  .registrar div button {
+    padding: 0 5vw;
+    font-size: 1rem;
+    margin: 20px 0 0 0;
+  }
+  
 }
 </style>

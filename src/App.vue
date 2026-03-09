@@ -32,5 +32,11 @@ import Footer from './components/footer.vue';
 
 <style scoped>
 
+header {
+  position:sticky;
+    top: 0;
+    z-index: 2;
+}
+
 </style>
 

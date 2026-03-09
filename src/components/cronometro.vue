@@ -2,7 +2,7 @@
 <template>
   <section class="cronometro">
     <h2>
-      Quanto tempo falta para o grande momento: 
+      Quanto tempo falta para o grande momento:
     </h2>
     <div>
       <span>
@@ -32,5 +32,13 @@
   text-align: center;
   font-size: 15rem;
   border-radius: 20px;
+}
+@media screen and (max-width: 900px) {
+  .cronometro h2 {
+    font-size: 2rem;
+  }
+  .cronometro div span {
+    font-size: 4.5rem;
+  }
 }
 </style>

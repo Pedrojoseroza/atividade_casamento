@@ -1,15 +1,15 @@
 <script>
 </script>
 <template>
-    <div>
+    <section>
         <h2>
           J&J
         </h2>
         <p>Saturday, september, 25</p>
-    </div>
+      </section>
 </template>
 <style scoped>
-div {
+section {
   background-color: #394826;
   color: #fff;
   padding: 10vh 40vw;
@@ -22,5 +22,10 @@ h2 {
 p {
   text-align: center;
   font-size: 1.3rem;
+}
+@media screen and (max-width: 900px) {
+  section {
+    padding: 20px 30px;
+  }
 }
 </style>
